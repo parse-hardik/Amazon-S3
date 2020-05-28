@@ -14,8 +14,8 @@ app.use(bodyParser.json());
 
 var awsconfig = {
 	"region": "us-east-2",
-	"accessKeyId": "AKIAIFCGMODBZTAKJQMA",
-	"secretAccessKey": "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"
+	"accessKeyId": process.env.accessKeyId,
+	"secretAccessKey": process.env.secretAccessKey,
 };
 AWS.config.update(awsconfig);
 
