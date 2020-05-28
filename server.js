@@ -63,7 +63,7 @@ const multerS3Obj = multerS3({
 							cb(null, subfolder + file.originalname);
 				},
 				transform: function(req, file, cb) {
-					cb(null, sharp().resize(null,null));
+					cb(null, sharp().resize(200,300));
 				}
 			}
 	],
